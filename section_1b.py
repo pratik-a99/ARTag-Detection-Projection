@@ -161,7 +161,7 @@ print(decode(warped_binary))
 
 cv.imshow('Corners', warped_binary)
 
-cv.imwrite("flattened_tag.png", warped_binary)
+# cv.imwrite("flattened_tag.png", warped_binary)
 
 
 cv.waitKey()

@@ -44,7 +44,7 @@ img_back = cv2.GaussianBlur(img_back, (7, 7), 0)
 
 
 cv2.imshow('Corners', img_back)
-cv2.imwrite("fft_result.png", img_back)
+# cv2.imwrite("fft_result.png", img_back)
 
 # if cv2.waitKey(0) & 0xff == 27:
 #     cv2.destroyAllWindows()
