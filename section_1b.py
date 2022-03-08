@@ -64,11 +64,6 @@ ref_corners_ordered = np.array([[rxp1, ryp1], [rxp2, ryp2], [rxp3, ryp3], [rxp4,
 
 #############################
 
-
-# while cap.isOpened():
-#     ret, frame = cap.read()
-#
-#     if ret:
 th, img_bin = cv.threshold(img, 180, 255, cv.THRESH_BINARY)
 corners = cv.goodFeaturesToTrack(img_bin, 9, 0.1, 100)
 corners = np.int0(corners)
@@ -168,11 +163,5 @@ cv.imshow('Corners', warped_binary)
 
 cv.imwrite("flattened_tag.png", warped_binary)
 
-#     if cv.waitKey(250) & 0xFF == ord('q'):
-#         break
-# else:
-#     break
-
 
 cv.waitKey()
-#########################################################################################################################
